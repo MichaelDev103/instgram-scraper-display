@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+		<title>Home - Email Checker</title>
+		<meta name="description" content="TODO" />
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+		/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" />
+		<link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css" />
+		<link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css" />
+		<link rel="stylesheet" href="assets/css/Custom-File-Upload.css" />
+		<link rel="stylesheet" href="assets/css/divider-text-middle.css" />
+		<link rel="stylesheet" href="assets/css/Drag--Drop-Upload-Form.css" />
+		<link
+			rel="stylesheet"
+			href="assets/css/Drag-and-Drop-Multiple-File-Form-Input-upload-Advanced.css"
+		/>
+		<link rel="stylesheet" href="assets/css/Feature-Section-MD.css" />
+		<link rel="stylesheet" href="assets/css/Features-Clean.css" />
+		<link rel="stylesheet" href="assets/css/Login-Form-Dark.css" />
+		<link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css" />
+		<link rel="stylesheet" href="assets/css/Testimonials.css" />
+	</head>
+
+	<body>
+		<nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
+				<div class="container">
+					<a href="https://verifyemails.io/"><img class="navbar-brand" src="assets/img/logo.jpg" width="160" height="65" /></a><button
+						data-toggle="collapse"
+						class="navbar-toggler"
+						data-target="#navcol-1"
+					></button>
+					<div class="collapse navbar-collapse" id="navcol-1"></div>
+					<a href="index.html" style="color: white">Single Verifier &nbsp;&nbsp;</a
+					><a href="bulk.html" style="color: white">Bulk Verifier &nbsp;&nbsp;</a>
+					<a href="register.html" style="color: white">Register&nbsp; &nbsp;</a
+					><a href="login.html" style="color: white"
+						>Login&nbsp; &nbsp;</a
+					><a href="about.html" style="color: white">About&nbsp; &nbsp;</a>
+				</div>
+			</nav>
+		<header
+			class="masthead text-white text-center"
+			style="
+				/*background: url('assets/img/bg-masthead.jpg')no-repeat center center;*/ /*background-size: cover;*/ /*color: red;*/
+				background-color: #ffffff;
+			"
+		>
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-9 mx-auto">
+						<h1 class="mb-5" style="color: black">Enter CSV File To Check!</h1>
+					</div>
+					<div class="col-md-10 col-lg-8 col-xl-12 offset-xl-4 mx-auto">
+						<form action="/bulk" enctype="multipart/form-data" method="post">
+							<div class="form-row">
+								<div class="col offset-xl-5">
+									<div style="width: 200px">
+										<input
+											type="file"
+											id="user_group_logo"
+											class="custom-file-input"
+											accept=".csv"
+											name="file"
+										/><label id="user_group_label" for="user_group_logo"
+											><i class="fas fa-upload"></i>&nbsp;Choose a file...</label
+										>
+										<hr />
+										<button class="btn btn-primary" type="submit">Verify Now</button>
+										<div class="text-center"></div>
+										<div class="text-center mt-2"></div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="overlay">
+			<div class="container">
+				<div class="row row-fitur">
+					<div class="col-sm-4 col-md-4 waves-effect kolom-a">
+						<div class="fitur-a"><img src="assets/img/ic-lock.png" /></div>
+						<div class="separator-fitur"></div>
+						<div>
+							<h4 class="heading-fitur">Upload</h4>
+							<p class="paragraf-fitur">
+								Use the "Choose a file" button to search for your file on your device you want to
+								check. Once the file is chosen, feel free to upload it securely to our servers by
+								pressing "Verify Now"
+							</p>
+							<br />
+							<p style="font-weight: bold" class="paragraf-fitur">Important:</p>
+							<p class="paragraf-fitur">
+								The maximum emails you can write in a .CSV file is 10, all written in the first column.
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-4 waves-effect kolom-b">
+						<div class="fitur-a"><img src="assets/img/ic-check.png" /></div>
+						<div class="separator-fitur"></div>
+						<div>
+							<h4 class="heading-fitur">Result Time</h4>
+							<p class="paragraf-fitur">
+								As it requires some time for our servers to check every email you uploaded, take a
+								rest and we will bring your result in less than 15 seconds!
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-4 waves-effect kolom-c">
+						<div class="fitur-a"><img src="assets/img/ic-flaw.png" /></div>
+						<div class="separator-fitur"></div>
+						<div>
+							<h4 class="heading-fitur">Download</h4>
+							<p class="paragraf-fitur">
+								Once the verification is done, you can download the new file with the results you
+								desired by pressing "Download" button
+							</p>
+						</div>
+					</div>
+				</div>
+				<br /><br /><br /><br />
+			</div>
+			
+			<footer class="footer bg-light">
+				<div class="col-lg-6 my-auto h-100 text-center text-lg-left">
+					<ul class="list-inline mb-2">
+						<li class="list-inline-item"><a href="about.html">About</a></li>
+						<li class="list-inline-item"><span>⋅</span></li>
+						<li class="list-inline-item"><a href="#">Contact</a></li>
+						<li class="list-inline-item"><span>⋅</span></li>
+						<li class="list-inline-item"><a href="#">Terms of &nbsp;Use</a></li>
+						<li class="list-inline-item"></li>
+						<li class="list-inline-item"></li>
+					</ul>
+					<p class="text-muted small mb-4 mb-lg-0">© Email Checker 2020. All Rights Reserved.</p>
+				</div>
+			</footer>
+		</div>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/js/Custom-File-Upload.js"></script>
+		<script src="assets/js/Drag-and-Drop-Multiple-File-Form-Input-upload-Advanced.js"></script>
+	</body>
+</html>
